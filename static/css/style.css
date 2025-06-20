@@ -1,0 +1,187 @@
+/* ======================= */
+/* RESET DASAR & BODY STYLE */
+/* ======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hwb(283 1% 63%);
+    color: #080808;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* NAVBAR */
+/* ======================= */
+.navbar {
+    background-color: #4B0082;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar a i {
+    margin-right: 4px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ======================= */
+/* HEADER (HERO) */
+/* ======================= */
+.hero {
+    background-color: #6a0dad;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+
+/* ======================= */
+/* KONTEN & FORM */
+/* ======================= */
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(243, 5, 5, 0.1);
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4a90e2;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* ======================= */
+/* TOMBOL */
+/* ======================= */
+.btn,
+form .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover,
+form .btn:hover {
+    background-color: #357ABD;
+}
+
+/* ======================= */
+/* HASIL PREDIKSI */
+/* ======================= */
+.prediction-result {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e6f7ff;
+    border-left: 5px solid #4a90e2;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-result h3 {
+    margin-top: 0;
+    color: #357ABD;
+}
+
+.prediction-result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ======================= */
+/* PESAN FLASH */
+/* ======================= */
+.flash-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.flash-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flash-message.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.flash-message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ======================= */
+/* FOOTER */
+/* ======================= */
+footer {
+    background-color: hsl(275, 91%, 58%);
+    color: rgb(238, 235, 240);
+    text-align: center;
+    padding: 10px;
+}
